@@ -1,1 +1,2 @@
-This is the second txt file thet we are making. Modified for the first time
+This is the second txt file thet we are making. Modified for the first time.
+Second file modified
