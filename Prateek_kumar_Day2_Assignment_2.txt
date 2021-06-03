@@ -1,0 +1,23 @@
+1-> pr/prateek.kumar/day2_linkedlist
+2-> https://drive.google.com/file/d/1UJ9npbpP5La8V-U_mtx-uiFG1I1TZ-Vl/view?usp=sharing
+3-> a) To store the records of parts and their respective costing, the most effecient data structure is Hashmap. As we know each part of a vehicle has a unique name which can be used as a key and their respective prices will be the values. This will be the fastest way to access the details of each part of vehicle.
+    b) To mark the attendence of students in a class, A 2-D arrray will be very effecient. AS the number of students and the number of working days of a school are fixed or static . In cs eof ststic memeory allocation Arrays are very effective.
+    c) CODE:
+		def Parser(s:str):
+			l_open=['[','{','(']
+			l_closed=[']','}',')']
+			stack,flag=[],1
+			for i in s:
+				if i in l_open:
+					stack.append(i)
+				else:
+					id=l_closed.index(i)
+					if stack[len(stack)-1]==l_open[id]:
+						stack.pop()
+					else:
+						return False
+			if len(stack)==0:
+				return True
+			else:
+				return False
+				 
